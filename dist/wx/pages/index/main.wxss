@@ -1,0 +1,32 @@
+
+.container.data-v-760819f6 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.login.data-v-760819f6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.login ._img.data-v-760819f6 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.login .learn.data-v-760819f6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+.learn ._button.data-v-760819f6 {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 80%;
+  background-color: #009eef;
+  color: white;
+}

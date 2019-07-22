@@ -1,0 +1,19 @@
+<template name="3681dccc">
+  <view class="_div data-v-089fda58 question">
+    <image src="/static/imgs/test.jpg" alt class="_img data-v-089fda58 bg"></image>
+    <view class="_div data-v-089fda58 qs_content" wx:if="{{questions.length > 0}}">
+      <view wx:if="{{!startqs}}" class="_div data-v-089fda58">
+        <view class="_p data-v-089fda58 title">提示您：</view>
+        <view class="_div data-v-089fda58 warn_tag"> 为了更好的为您制定学习计划,请首先回答以下问题, 我们会为您量身推荐相关的课程. </view>
+      </view>
+      <view wx:else class="_div data-v-089fda58">
+        <view class="_p data-v-089fda58 title">{{questions[current_Index].title}}</view>
+        <view class="_div data-v-089fda58 response" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{questions[current_Index].option}}" wx:for-index="index" wx:for-item="item">
+          <image wx:if="{{item.select}}" src="/static/imgs/selected.jpg" alt class="_img data-v-089fda58"></image>
+          <image wx:else src="/static/imgs/unselect.jpg" alt class="_img data-v-089fda58"></image>
+          <spen class="_spen data-v-089fda58">{{item.label}}</spen>
+        </view>
+      </view>
+    </view> <button disabled="{{disabled}}" class="_button data-v-089fda58 qs_btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">{{btn_title}}</button>
+  </view>
+</template>
